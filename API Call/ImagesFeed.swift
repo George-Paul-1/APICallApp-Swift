@@ -37,5 +37,6 @@ struct ImagesFeed: View {
             images.fetchImages()
             print("Fetching")
         }
+        .navigationTitle("Images")
     }
 }

@@ -30,5 +30,6 @@ struct PostsFeed: View {
             }
             print("Fetching")
         }
+        .navigationTitle("Posts")
     }
 }

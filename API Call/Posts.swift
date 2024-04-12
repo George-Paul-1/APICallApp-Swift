@@ -28,7 +28,9 @@ class Posts: ObservableObject {
             
             do {
                 let posts = try JSONDecoder().decode([Post].self, from: data)
-                completion(posts)
+                DispatchQueue.main.async{
+                    completion(posts)
+                }
                 // calls the completion closure with the decoded posts.
             } catch {
                 print("Error decoding JSON: \(error)")
