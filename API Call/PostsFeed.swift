@@ -27,7 +27,7 @@ struct PostsFeed: View {
         .onAppear {
             posts.getPosts {fetchedPost in
                 posts.postsData = fetchedPost
-            }
+            } // fetching posts using the completion closure 
             print("Fetching")
         }
         .navigationTitle("Posts")
